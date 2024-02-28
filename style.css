@@ -72,4 +72,55 @@ nav ul li a:hover {
 .section-2 {
   max-width: 85vw;
   margin: auto;
+  height: 80vh;
+}
+
+.section-2 h1{
+  font-size: 2rem;
+}
+
+.section-2 span {
+  color: #606c38;
+}
+
+main hr {
+  border-color: #bc6c25;
+  margin: 80px 2%;
+}
+
+.section-2 .hor-line {
+  background-color: #bc6c25;
+  margin: 40px 0px;
+  height: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-2 .vert-line {
+  background-color: #bc6c25;
+  width: 2px;
+  height: 80px;
+}
+
+.image-top {
+  height:20px;
+  position: relative;
+  top: -25px;
+  left: -5px;
+}
+
+.vert-title{
+  width: 100px;
+  font-size: .9rem;
+  position: relative;
+  top: 60px;
+  left: -35px;
+}
+
+.vert-desc {
+  width: 100px;
+  font-size: .8rem;
+  position: relative;
+  top: 70px;
+  left: -35px;
 }
