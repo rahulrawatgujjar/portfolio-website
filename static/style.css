@@ -17,6 +17,7 @@ nav {
   background-color: #dda15e;
   height: 70px;
   position:fixed;
+  z-index: 2;
   top:0px;
   width: 100%;
   border-bottom: 2px solid rgba(237, 223, 198, 0.5);;
@@ -188,4 +189,61 @@ footer {
   padding: 8px 0;
   font-size: .8rem;
 }
+
+/* section-3 */
+
+.section-3 {
+  max-width: 85vw;
+  margin: auto;
+}
+
+.section-3 h1{
+  font-size: 2rem;
+}
+
+.project {
+  margin-bottom: 40px;
+  border: 1px solid #bc6c25;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.project .title, .description, .github-link, .deployment-link {
+  margin: 10px 0px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #283618;
+}
+
+.project a:hover{
+  color: #606c38;
+  margin-left: 0.4px;
+}
+
+
+.project iframe{
+  position: relative;
+  top: -143px;
+  left: -236px;
+  width: 150%;
+  height: 600px;
+  border: none;
+  border-radius: 30px;
+  margin: 3px;
+  transition: all;
+  transform: scale(0.5,0.5);
+  overflow: hidden;
+}
+
+.project .hide-iframe {
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.project .view {
+  height: 380px;
+}
+
 

@@ -8,3 +8,4 @@ resumeBtn.addEventListener("click",()=>{
 githubBtn.addEventListener("click",()=>{
   window.open('https://github.com/rahulrawatgujjar', '_blank');
 });
+

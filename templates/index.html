@@ -13,19 +13,7 @@
   <body>
 
     <header>
-      <nav>
-        <div class="left">Rahul's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="below-nav"></div>
+      {% include "navbar.html" %}
     </header>
 
     <main>
@@ -92,44 +80,43 @@ CGPA: 8.61/10</pre>
           </div>
         </div>
       </section>
+
+      <hr>
+
+      <section class="section-3">
+        <span>Here is</span>
+        <h1>My Projects</h1>
+        {% for project in projects %}
+          <div class="project">
+            <div class="title">
+              <h3>Project title:</h3>
+              <p>{{project["title"]}}</p>
+            </div>
+            <div class="description">
+              <h3>Project description:</h3>
+              <p>{{project["description"]}}</p>
+            </div>
+            <div class="github-link">
+              <h3>Github link:</h3>
+              <a target="_blank" href={{project['github_link']}}>{{project["github_link"]}}</a>
+            </div>
+            <div class="deployment-link">
+              <h3>Deployment link:</h3>
+              <a target="_blank" href={{project["deployment_link"]}}>{{project["deployment_link"]}}</a>
+            </div>
+            <div class="view">
+              <h3>Display:</h3>
+              <div class="hide-iframe">
+                <iframe  src={{project["deployment_link"]}}></iframe>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </section>
     </main>
 
     <footer>
-      <div class="footer">
-        <div class="footer-one">
-          <ul>Footer part1
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
-          </ul>
-        </div>
-
-        <div class="footer-two">
-          <ul>Footer part2
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
-          </ul>
-        </div>
-
-        <div class="footer-three">
-          <ul>Footer part3
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-end">
-        Copyright &#169 | All rights reserved.
-      </div>
+      {% include "footer.html" %}
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
