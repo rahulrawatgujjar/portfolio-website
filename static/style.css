@@ -163,32 +163,44 @@ footer {
   color: white;
 }
 
-.footer {
-  background-color:#dda15e;
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 20px;
-
-}
-
-.footer > div{
-  width: 150px;
-}
-
-.footer ul{
-  list-style: none;
-}
-
-.footer ul li{
-  font-size: 0.8rem;
-}
 
 .footer-end {
   background-color: #bc6c25;
   text-align: center;
-  padding: 8px 0;
+  padding: 5px 0;
   font-size: .8rem;
 }
+
+.footer-start {
+  background-color: #dda15e;
+  display: flex;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-start i {
+  font-size: 1.1rem;
+}
+
+.footer-start > div{
+  padding: 5px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: .5s;
+}
+
+.footer-start > div:hover {
+  color: black;
+}
+
+.footer-start > div:active {
+  color: black;
+  transform: scale(.8,.8);
+
+}
+
 
 /* section-3 */
 
@@ -235,6 +247,7 @@ footer {
   transition: all;
   transform: scale(0.5,0.5);
   overflow: hidden;
+  background-color: white;
 }
 
 .project .hide-iframe {

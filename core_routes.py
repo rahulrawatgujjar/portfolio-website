@@ -7,3 +7,9 @@ core_routes= Blueprint("core",__name__)
 def home():
   projects=load_projects()
   return render_template("index.html",projects=projects)
+
+
+@core_routes.route("/api/projects")
+def projects():
+  projects=load_projects()
+  return jsonify(projects)
