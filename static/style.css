@@ -261,7 +261,7 @@ footer {
 }
 
 .project .hide-iframe {
-  overflow-x: scroll;
+  overflow-x: hidden;
   scrollbar-width: none;
 }
 
